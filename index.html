@@ -1,0 +1,73 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="./fixedHeader.js"></script>
+	<style>
+		td, table, th{
+			border: 1px solid black;
+			width: 80em;
+		}
+		#box{
+			
+			height: 200px;
+			border: 2px dashed red;
+			overflow: scroll;
+
+		}
+		#wrapper_body{
+			/*
+			border: 2px dashed blue;
+			*/
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<table id="my_table">
+			<tr>
+				<th>Header 1</th>
+				<th>Header 2</th>
+			</tr>
+			<tr>
+				<td>Row 1, Column 1</td>
+				<td>Row 1, Column 2</td>
+			</tr>
+			<tr>
+				<td>Row 2, Column 1</td>
+				<td>Row 2, Column 2</td>
+			</tr>
+			<tr>
+				<td>Row 3, Column 1</td>
+				<td>Row 3, Column 2</td>
+			</tr>
+			<tr>
+				<td>Row 4, Column 1</td>
+				<td>Row 4, Column 2</td>
+			</tr>
+			<tr>
+				<td>Row 5, Column 1</td>
+				<td>Row 5, Column 2</td>
+			</tr>
+			<tr>
+				<td>Row 6, Column 1</td>
+				<td>Row 6, Column 2</td>
+			</tr>
+			<tr>
+				<td>Row 7, Column 1</td>
+				<td>Row 7, Column 2</td>
+			</tr>
+			<tr>
+				<td>Row 8, Column 1</td>
+				<td>Row 8, Column 2</td>
+			</tr>
+			<tr>
+				<td>Row 9, Column 1</td>
+				<td>Row 9, Column 2</td>
+			</tr>
+		</table>
+	</div>
+	<script defer>
+		$("#my_table").fixedHeader(100);
+	</script>
+</body>
+</html>
